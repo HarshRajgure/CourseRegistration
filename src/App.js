@@ -1,24 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import RegistrationForm from "./components/RegistrationForm";
+import Dashboard from "./components/Dashboard";
+import StudentList from "./components/StudentList";
+import Profile from "./components/Profile";
+import HomePage from "./pages/HomePage";
+import ContactPage from "./pages/ContactPage";
+import AboutUsPage from "./pages/AboutUsPage";
+import ThankYou from "./pages/ThankYouPage";
+import CoursesList from "./components/CoursesList";
+import CourseRegistrationForm from "./components/CourseRegistrationForm";
 
 function App() {
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar isAdminAuthenticated={isAdminAuthenticated} />
+      <Routes>
+        {/* Public Pages */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/courses" element={<CoursesList />} />
+        <Route path="/courses/:id/register" element={<CourseRegistrationForm />} />
+        <Route path="/register" element={<RegistrationForm />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/thank-you" element={<ThankYou />} />
+
+        {/* Login Page */}
+        <Route
+          path="/login"
+          element={<Login onLogin={() => setIsAdminAuthenticated(true)} />}
+        />
+
+        {/* Admin Protected Routes */}
+        <Route
+          path="/dashboard"
+          element={
+            isAdminAuthenticated ? <Dashboard /> : <Navigate to="/login" replace />
+          }
+        />
+        <Route
+          path="/student-list"
+          element={
+            isAdminAuthenticated ? <StudentList /> : <Navigate to="/login" replace />
+          }
+        />
+
+        {/* Fallback */}
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 

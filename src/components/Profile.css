@@ -1,0 +1,87 @@
+/* Profile.css */
+
+.profile-container {
+  max-width: 500px;
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #222;
+}
+
+.profile-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #555;
+}
+
+.profile-input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.profile-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.profile-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-button.save {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.profile-button.save:hover {
+  background-color: #0056b3;
+}
+
+.profile-button.cancel {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.profile-button.cancel:hover {
+  background-color: #545b62;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .profile-container {
+    margin: 20px 15px;
+    padding: 25px 20px;
+  }
+}

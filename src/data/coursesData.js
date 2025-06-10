@@ -1,0 +1,176 @@
+// src/data/coursesData.js
+
+const courses = [
+  {
+    id: "full-stack-web-dev",
+    title: "Full Stack Web Development",
+    description: "Learn HTML, CSS, JavaScript, React, Node.js, MongoDB to build modern web apps.",
+    fees: "₹40,000",
+    duration: "6 months",
+    benefits: [
+      "Build real-world projects",
+      "Get job-ready with industry standards",
+      "Access to expert mentors",
+      "Certification on completion",
+    ],
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    id: "core-java",
+    title: "Core Java",
+    description: "Master OOP concepts, Collections, Exception Handling, Multithreading and more.",
+    fees: "₹25,000",
+    duration: "4 months",
+    benefits: [
+      "Strong Java fundamentals",
+      "Hands-on coding exercises",
+      "Prepare for Java developer roles",
+      "Certificate after course",
+    ],
+    image: "https://tse4.mm.bing.net/th?id=OIP.QTy26wh0whEBP9arFUqpvwHaD4&pid=Api&P=0&h=220",
+  },
+  {
+    id: "spring-boot",
+    title: "Advanced Java (Spring Boot)",
+    description: "Learn Spring MVC, Spring Boot, JPA, REST APIs, Microservices.",
+    fees: "₹30,000",
+    duration: "5 months",
+    benefits: [
+      "Build scalable backend apps",
+      "Work with databases & REST",
+      "Understand microservices architecture",
+      "Certification on completion",
+    ],
+    image: "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    id: "react-js",
+    title: "React JS",
+    description: "Build dynamic user interfaces using React, Hooks, Redux and Context API.",
+    fees: "₹20,000",
+    duration: "3 months",
+    benefits: [
+      "Create interactive UIs",
+      "Learn state management",
+      "Hands-on projects with React Router",
+      "Certificate on completion",
+    ],
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    id: "node-js",
+    title: "Node.js & Express",
+    description: "Learn server-side JavaScript, RESTful APIs, and backend development.",
+    fees: "₹22,000",
+    duration: "3 months",
+    benefits: [
+      "Build backend services",
+      "Work with databases",
+      "Understand REST API design",
+      "Certification after course",
+    ],
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+  id: "python-basics",
+  title: "Python Programming",
+  description: "Get started with Python programming, syntax, data structures, and libraries.",
+  fees: "₹18,000",
+  duration: "3 months",
+  benefits: [
+    "Strong programming fundamentals",
+    "Hands-on coding",
+    "Prepare for automation & scripting",
+    "Certificate of completion",
+  ],
+  image: "https://pytutorial.com/media/py.jpg"
+},
+{
+  id: "dsa",
+  title: "Data Structures & Algorithms",
+  description: "Master problem-solving using DSA with Java or Python.",
+  fees: "₹25,000",
+  duration: "3 months",
+  benefits: [
+    "Ace coding interviews",
+    "Master algorithmic thinking",
+    "Live problem-solving sessions",
+    "Certificate on completion",
+  ],
+  image: "https://www.seedprogramming.org/wp-content/uploads/2023/02/PicsArt_03-24-07.25.58-1.webp",
+  
+},
+{
+  id: "devops",
+  title: "DevOps Essentials",
+  description: "Understand CI/CD, Docker, Kubernetes, Jenkins, and modern DevOps tools.",
+  fees: "₹35,000",
+  duration: "3.5 months",
+  benefits: [
+    "Build & deploy projects",
+    "Learn automation pipelines",
+    "Hands-on cloud practice",
+    "Certificate after course",
+  ],
+  image: "https://tech-prospect.com/wp-content/uploads/2021/01/DevOps-FAQ-1200x900-1.jpg",
+},
+
+  {
+    id: "ui-ux",
+    title: "UI/UX Design",
+    description: "Learn design thinking, Figma, wireframing, and UI best practices.",
+    fees: "₹20,000",
+    duration: "2.5 months",
+    benefits: [
+      "Practical UI projects",
+      "Learn prototyping",
+      "Responsive design skills",
+      "Certification after course",
+    ],
+    image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    id: "android-dev",
+    title: "Android App Development",
+    description: "Learn Kotlin, Jetpack Compose, Android Studio and Firebase.",
+    fees: "₹28,000",
+    duration: "4 months",
+    benefits: [
+      "Build real Android apps",
+      "Firebase integration",
+      "Learn modern Android tools",
+      "Certificate after course",
+    ],
+    image: "https://i.ytimg.com/vi/-roabEnBVQo/maxresdefault.jpg",
+  },
+  {
+    id: "cloud-computing",
+    title: "Cloud Computing (AWS/Azure)",
+    description: "Introduction to cloud platforms, virtual machines, storage, and DevOps.",
+    fees: "₹32,000",
+    duration: "3 months",
+    benefits: [
+      "Deploy projects on cloud",
+      "Understand architecture basics",
+      "Work with real services",
+      "Certificate on completion",
+    ],
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80",
+  },
+  {
+    id: "database-design",
+    title: "Database Design & SQL",
+    description: "Learn relational database design, normalization, joins, indexing, and advanced SQL.",
+    fees: "₹20,000",
+    duration: "2.5 months",
+    benefits: [
+      "Master MySQL & PostgreSQL",
+      "Real-world schema building",
+      "Hands-on practice",
+      "Certification after course",
+    ],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80",
+  }
+];
+
+export default courses;

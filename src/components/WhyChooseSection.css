@@ -1,0 +1,97 @@
+/* WhyChooseSection.css */
+
+.why-choose-section {
+  padding: 80px 20px;
+  background-color: #e3f2fd;  /* हलका निळसर फॉन्ट */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #0d47a1;
+}
+
+.why-choose-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeInDown 1s ease forwards;
+  color: #0d47a1;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(13, 71, 161, 0.1);
+  padding: 30px 25px;
+  flex: 1 1 220px;
+  max-width: 280px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.feature-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 20px 30px rgba(13, 71, 161, 0.25);
+  background: linear-gradient(135deg, #bbdefb, #90caf9);
+  color: white;
+}
+
+.feature-card:hover .feature-icon {
+  color: white;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: #0d47a1;
+  margin-bottom: 20px;
+  transition: color 0.4s ease, filter 0.4s ease;
+}
+
+.feature-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #455a64;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
