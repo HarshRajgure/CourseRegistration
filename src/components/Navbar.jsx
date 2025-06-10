@@ -9,7 +9,7 @@ function Navbar({ isAdminLoggedIn }) {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <NavLink to="/" className="logo">MyCourseApp</NavLink>
+        <NavLink to="/" className="logo">Skill-Mandir</NavLink>
       </div>
 
       <ul className="navbar-links">
